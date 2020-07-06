@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    android:elevation="8dp"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/item_image_profile"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="8dp" />
+
+                <TextView
+                    android:id="@+id/item_user_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Usuario"
+                    android:textColor="@color/colorText" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/item_image"
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                />
+            <TextView
+                android:id="@+id/item_image_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Descripcion"
+                android:gravity="center"
+                android:textColor="@color/colorText" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_feed_item_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_thumb_up_24"
+                    android:tint="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/tv_feed_item_likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorText"
+                    android:text="@string/feed_item_like"
+                    android:layout_marginLeft="8dp" />
+
+                <Button
+                    android:id="@+id/btn_feed_item_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_mode_comment_24"
+                    android:textSize="16sp"
+                    android:text="@string/feed_item_comment"
+                    android:textAllCaps="false"
+                    android:drawablePadding="4dp"
+                    android:padding="4dp"
+                    android:textColor="@color/colorText"
+                    android:layout_marginStart="32dp"
+                    android:background="@null"
+                    android:drawableTint="@color/colorPrimary"
+                    android:layout_marginLeft="32dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
